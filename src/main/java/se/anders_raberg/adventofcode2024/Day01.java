@@ -6,10 +6,10 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.logging.Logger;
 
-public class Day1 {
-	private static final Logger LOGGER = Logger.getLogger(Day1.class.getName());
+public class Day01 {
+	private static final Logger LOGGER = Logger.getLogger(Day01.class.getName());
 
-	private Day1() {
+	private Day01() {
 	}
 
 	public static void run() throws IOException {
