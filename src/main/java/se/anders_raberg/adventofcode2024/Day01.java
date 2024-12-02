@@ -25,16 +25,12 @@ public class Day01 {
 		List<Integer> left = list.stream().map(Pair::first).sorted().toList();
 		List<Integer> right = list.stream().map(Pair::second).sorted().toList();
 
-		int sum1 = IntStream.range(0, left.size()).map(i -> Math.abs(left.get(i) - right.get(i))).sum();
-
-		LOGGER.info("Part 1: " + sum1);
+		LOGGER.info(() -> "Part 1: " + IntStream.range(0, left.size()).map(i -> Math.abs(left.get(i) - right.get(i))).sum());
 
 		Map<Integer, Long> result = right.stream()
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
-		long sum2 = left.stream().mapToLong(v -> v * result.getOrDefault(v, 0L)).sum();
-
-		LOGGER.info("Part 2: " + sum2);
+		LOGGER.info(() -> "Part 2: " + left.stream().mapToLong(v -> v * result.getOrDefault(v, 0L)).sum());
 	}
 
 	private static Pair<Integer, Integer> parseLine(String line) {
