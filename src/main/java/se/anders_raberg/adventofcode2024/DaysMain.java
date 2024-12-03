@@ -6,5 +6,6 @@ public class DaysMain {
 	public static void main(String[] args) throws IOException {
 		Day01.run();
 		Day02.run();
+		Day03.run();
 	}
 }
