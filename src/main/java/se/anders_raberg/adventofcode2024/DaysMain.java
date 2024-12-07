@@ -8,5 +8,6 @@ public class DaysMain {
 		Day02.run();
 		Day03.run();
 		Day04.run();
+		Day05.run();
 	}
 }
