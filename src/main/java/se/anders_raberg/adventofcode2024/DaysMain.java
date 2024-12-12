@@ -10,5 +10,6 @@ public class DaysMain {
 		Day04.run();
 		Day05.run();
 		Day07.run();
+		Day09.run();
 	}
 }
