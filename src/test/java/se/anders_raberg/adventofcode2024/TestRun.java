@@ -7,10 +7,10 @@ import java.io.IOException;
 import org.junit.jupiter.api.Test;
 
 class TestRun {
-	@Test
-	void testMain() throws IOException {
-		DaysMain.main(null);
-		assertTrue(true);
-	}
+    @Test
+    void testMain() throws IOException {
+        DaysMain.main(null);
+        assertTrue(true);
+    }
 
 }
