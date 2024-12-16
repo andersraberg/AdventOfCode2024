@@ -15,5 +15,6 @@ public class DaysMain {
         Day09.run();
         Day10.run();
         Day11.run();
+        Day13.run();
     }
 }
