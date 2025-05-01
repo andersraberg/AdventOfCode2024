@@ -10,9 +10,7 @@ node {
 
     stage('Code coverage') {
         sh './gradlew jacocoTestReport -Pversion=$BUILD_NUMBER'
-        jacoco( 
-            execPattern: 'build/jacoco/*.exec',
-        )
+        recordCoverage tools: [jacoco(pattern: 'build/reports/jacoco/test/jacocoTestReport.xml')]
     }
 
     stage('Sonar') {
@@ -29,8 +27,7 @@ node {
                      keepAll: true,
                      reportDir: 'build/reports/profile/',
                      reportFiles: 'index.html',
-                     reportName: 'Gradle profile',
-                     reportTitles: ''])
+                     reportName: 'Gradle Build Profile'])
     }
     
 }
