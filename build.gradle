@@ -16,6 +16,15 @@ jacoco {
     applyTo run
 }
 
+jacocoTestReport {
+    reports {
+        xml.required = true
+        html.required = false
+        csv.required = false
+    }
+
+}
+
 version = providers.environmentVariable("BUILD_NUMBER").orElse("1.0-SNAPSHOT")
 
 dependencies {
