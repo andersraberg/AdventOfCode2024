@@ -1,5 +1,10 @@
 node {
     git 'https://github.com/andersraberg/AdventOfCode2024.git'
+
+    dir('../common-catalog') {
+        git 'https://github.com/andersraberg/common-catalog.git'
+    }
+
     stage('Build') {
         sh './gradlew clean build -Pversion=$BUILD_NUMBER --profile --configuration-cache --build-cache'
     }
