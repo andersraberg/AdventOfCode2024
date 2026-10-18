@@ -6,3 +6,9 @@ bin/
 .project
 .classpath
 
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Build output
+out/
