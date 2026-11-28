@@ -1,14 +1,24 @@
+# Gradle
 build/
-bin/
 .gradle/
-*~
+
+# Eclipse
 .settings/
 .project
 .classpath
+bin/
 
-# IntelliJ IDEA
+# IntelliJ
 .idea/
 *.iml
-
-# Build output
+*.iws
+*.ipr
 out/
+
+# Misc
+*~
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
